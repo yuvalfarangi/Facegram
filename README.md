@@ -30,10 +30,10 @@ User passwords are securely encrypted with bcrypt for optimal data protection.
 
 
 # Tech Stack
-Frontend: SwiftUI, Xcode
-Backend: Node.js, Express.js
-Database: MongoDB, Mongoose
-Integrations: Imagga API, Firebase FCM
+- Frontend: SwiftUI, Xcode
+- Backend: Node.js, Express.js
+- Database: MongoDB, Mongoose
+- Integrations: Imagga API, Firebase FCM
 
 
 -----------------------------------------------------
