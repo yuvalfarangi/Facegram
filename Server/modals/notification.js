@@ -1,4 +1,4 @@
-const { initializeFirebase } = require('../firebase/firebase_init');  // Adjust the path as needed
+const { initializeFirebase } = require('../firebase/firebase_init');
 const firebase = require('firebase/app');
 require('firebase/database');  // Import the database module
 

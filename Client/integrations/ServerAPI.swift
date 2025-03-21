@@ -1,5 +1,3 @@
-//
-//  post.swift
 //  FaceGram IOS
 //
 //  Created by Yuval Farangi on 07/12/2024.
@@ -83,7 +81,7 @@ class ServerAPI {
             // Send the DELETE request
             let (data, response) = try await URLSession.shared.data(for: request)
             
-            // Check for a successful response
+            // Check for a succ essful response
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 200 {
                 print("Server responded with status code \(httpResponse.statusCode)")
                 return nil

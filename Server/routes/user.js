@@ -49,19 +49,23 @@ router.post('/login', async (req, res) => {
 
     const user = await DBusers.findOne({ username });
     if (user) {
-        console.log(user)
-        const valid = await bcrypt.compare(password, user.password);
-        if (valid) {
-            res.status(200).json(user)
-        }
-        else {
-            console.log("passwords do not match")
-            res.status(401).json({ message: "incorrect password" })
-        }
-    } else {
-        console.log('no user found')
-        res.status(404).json({ message: "no user found" })
+        res.status(200).json(user) //debugging
     }
+
+    // if (user) {
+    //     console.log(user)
+    //     const valid = await bcrypt.compare(password, user.password);
+    //     if (valid) {
+    //         res.status(200).json(user)
+    //     }
+    //     else {
+    //         console.log("passwords do not match")
+    //         res.status(401).json({ message: "incorrect password" })
+    //     }
+    // } else {
+    //     console.log('no user found')
+    //     res.status(404).json({ message: "no user found" })
+    // }
 })
 
 

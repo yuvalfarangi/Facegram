@@ -1,9 +1,16 @@
+require('dotenv').config();
+console.log("dotenv config loaded");
+
 const got = require('got');
 const FormData = require('form-data');
 
-const apiKey = 'acc_4cd9dcfca36cc39';
-const apiSecret = '9c67c2f48bf6d4d5a304cb353c9a36f9';
-const url = 'https://api.imagga.com/v2/tags';
+const apiKey = process.env.IMAGGA_API_KEY;
+const apiSecret = process.env.IMAGGA_API_SECRET;
+const url = process.env.IMAGGA_URL;
+
+console.log('API Key:', apiKey);
+console.log('API Secret:', apiSecret);
+console.log('URL:', url);
 
 function convertToDataUri(base64String) {
   // Remove any prefix
@@ -18,7 +25,7 @@ module.exports = async function generateTags(base64Image) {
   }
 
   const form = new FormData();
-  form.append('image_base64', formattedBase64);  // Use the raw Base64 image
+  form.append('image_base64', formattedBase64);
 
   try {
     const response = await got.post(url, {

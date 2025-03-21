@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 router.use(express.json({ limit: '10mb' }));
 
-const generateTags = require('../API/imagga.js')
+const generateTags = require('../integrations/imagga.js')
 
 router.post('/', async (req, res) => {
     try {

@@ -11,7 +11,7 @@ router.get('/:id', async (req, res) => {
     try {
         const post = await DBposts.findById(req.params.id);
         if (!post) {
-            return res.status(404).json({ message: 'User not found' });
+            return res.status(404).json({ message: 'post not found' });
         }
         res.json(post);
     } catch (error) {
