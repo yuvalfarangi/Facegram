@@ -2,6 +2,13 @@
 -----------------------
 FaceGram is a social media app with a SwiftUI frontend, Node.js backend, and MongoDB database. Features include hashtag-based UX with Imagga API  integration, real-time notifications via Firebase FCM, and bcrypt-encrypted passwords. Showcasing modern design, security, and seamless API use.
 
+![Picture 1](./Pictures/1.png)
+![Picture 2](./Pictures/2.png)
+![Picture 3](./Pictures/3.png)
+![Picture 4](./Pictures/4.png)
+![Picture 5](./Pictures/5.png)
+
+
 # Features
 
 SwiftUI Frontend: 
